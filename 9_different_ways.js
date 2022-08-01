@@ -30,11 +30,7 @@ function differentWays(graph, start, end) {
         count[curNode] = sumArray.reduce((a, b) => a + b, 0)
 
         queue.push(...(graph[curNode] || []))
-
-            console.log(count)
-
     }
-
 
     return count[end]
 }
