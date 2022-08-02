@@ -34,3 +34,21 @@ function mergeSortedArrays(array1, array2) {
 }
 
 console.log(mergeSortedArrays(arr1, arr2))
+
+function countPairs(array, k) {
+    let count = 0
+    let right = 0
+
+    for (let left = 0; left < array.length; left++) {
+        while (right < array.length && array[right] - array[left] <= k) {
+            right++
+        }
+
+        count += array.length - right
+    }
+
+
+    return count
+}
+
+console.log(countPairs([1, 3, 5, 7, 8], 4))
