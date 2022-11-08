@@ -1,7 +1,7 @@
 const arr = [4, 5, 9, 8, 11, 49, -31, 7, 0]
 
 function quickSort(array) {
-    // O(log n)
+    // O(log n * n)
 
     if (array.length <= 1) return array
 
